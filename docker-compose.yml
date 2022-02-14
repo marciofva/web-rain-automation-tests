@@ -1,0 +1,18 @@
+version: '3'
+services:
+
+  chrome:
+    image: cypress-docker-image-e2e-tests
+    command: "cy:chrome"
+    volumes:
+      - ./cypress:/cypress
+      - ./cypress.json:/cypress.json
+      - ./package.json:/package.json
+
+  firefox:
+    image: cypress-docker-image-e2e-tests
+    command: "cy:firefox"
+    volumes:
+      - ./cypress:/cypress
+      - ./cypress.json:/cypress.json
+      - ./package.json:/package.json

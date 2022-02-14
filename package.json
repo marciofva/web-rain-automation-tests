@@ -1,0 +1,17 @@
+{
+  "name": "web-rain-automation-tests",
+  "version": "1.0.0",
+  "description": "Automation tests using Cypress",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "$(npm bin)/cypress open",
+    "cy:production": "$(npm bin)/cypress run --env configFile=production --browser chrome",
+    "cy:chrome": "$(npm bin)/cypress run --env configFile=production --browser chrome --config video=false",
+    "cy:firefox": "$(npm bin)/cypress run --env configFile=production --browser firefox --config video=false"
+  },
+  "author": "Marcio Almeida",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.4.1"
+  }
+}

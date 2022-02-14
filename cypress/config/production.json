@@ -1,0 +1,6 @@
+{
+  "baseUrl": "https://rain.us",
+  "env": {
+    "environment": "production"
+  }
+}
